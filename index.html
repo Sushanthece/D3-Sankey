@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html>  
 <head>
     <script src="d3.v2.js"></script>
     <script src="sankey.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheet.css">
+    <title>Sankey</title>
 </head>
 <style>
     body{
@@ -32,12 +34,24 @@
 </style> 
 
 <body>
-    <h1 align="center"> Sankey </h1>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/Sushanthece/D3-Sankey">View on GitHub</a>
+          <h1 id="project_title">Sankey</h1>         
+        </header>
+    </div>
+    
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
     <div id="chart" align="center"></div>
+    </section>
+    </div>
     <script type="text/javascript">
 
     var margin = {top: 5, right: 5, bottom: 6, left: 5},
-        width = 940 - margin.left - margin.right,
+        width = 840 - margin.left - margin.right,
         height = 560 - margin.top - margin.bottom;
 
     var svg = d3.select("#chart").append("svg")
@@ -168,5 +182,13 @@
     };
 
     </script>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
 </body>
 </html>
